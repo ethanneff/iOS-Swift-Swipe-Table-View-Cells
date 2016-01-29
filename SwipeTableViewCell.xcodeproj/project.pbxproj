@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		672795D51C5BE56000D54AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672795D41C5BE56000D54AB4 /* AppDelegate.swift */; };
-		672795D71C5BE56000D54AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672795D61C5BE56000D54AB4 /* ViewController.swift */; };
 		672795DA1C5BE56000D54AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672795D81C5BE56000D54AB4 /* Main.storyboard */; };
 		672795DC1C5BE56000D54AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672795DB1C5BE56000D54AB4 /* Assets.xcassets */; };
 		672795DF1C5BE56000D54AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672795DD1C5BE56000D54AB4 /* LaunchScreen.storyboard */; };
 		672795EA1C5BE56000D54AB4 /* SwipeTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672795E91C5BE56000D54AB4 /* SwipeTableViewCellTests.swift */; };
 		672795F51C5BE56000D54AB4 /* SwipeTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672795F41C5BE56000D54AB4 /* SwipeTableViewCellUITests.swift */; };
+		672796051C5BE5C900D54AB4 /* MCSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 672796041C5BE5C900D54AB4 /* MCSwipeTableViewCell.m */; };
+		672796081C5BE64600D54AB4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672796071C5BE64600D54AB4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		672795D11C5BE56000D54AB4 /* SwipeTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672795D41C5BE56000D54AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		672795D61C5BE56000D54AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		672795D91C5BE56000D54AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		672795DB1C5BE56000D54AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		672795DE1C5BE56000D54AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,10 @@
 		672795F01C5BE56000D54AB4 /* SwipeTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672795F41C5BE56000D54AB4 /* SwipeTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewCellUITests.swift; sourceTree = "<group>"; };
 		672795F61C5BE56000D54AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672796031C5BE5C900D54AB4 /* SwipeTableViewCell-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeTableViewCell-Bridging-Header.h"; sourceTree = "<group>"; };
+		672796041C5BE5C900D54AB4 /* MCSwipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSwipeTableViewCell.m; sourceTree = "<group>"; };
+		672796061C5BE60500D54AB4 /* MCSwipeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSwipeTableViewCell.h; sourceTree = "<group>"; };
+		672796071C5BE64600D54AB4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		672795D31C5BE56000D54AB4 /* SwipeTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				672796021C5BE59F00D54AB4 /* MCSwipeTableViewCell */,
 				672795D41C5BE56000D54AB4 /* AppDelegate.swift */,
-				672795D61C5BE56000D54AB4 /* ViewController.swift */,
+				672796071C5BE64600D54AB4 /* TableViewController.swift */,
 				672795D81C5BE56000D54AB4 /* Main.storyboard */,
 				672795DB1C5BE56000D54AB4 /* Assets.xcassets */,
 				672795DD1C5BE56000D54AB4 /* LaunchScreen.storyboard */,
@@ -123,6 +128,16 @@
 				672795F61C5BE56000D54AB4 /* Info.plist */,
 			);
 			path = SwipeTableViewCellUITests;
+			sourceTree = "<group>";
+		};
+		672796021C5BE59F00D54AB4 /* MCSwipeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				672796061C5BE60500D54AB4 /* MCSwipeTableViewCell.h */,
+				672796041C5BE5C900D54AB4 /* MCSwipeTableViewCell.m */,
+				672796031C5BE5C900D54AB4 /* SwipeTableViewCell-Bridging-Header.h */,
+			);
+			name = MCSwipeTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				672795D71C5BE56000D54AB4 /* ViewController.swift in Sources */,
+				672796051C5BE5C900D54AB4 /* MCSwipeTableViewCell.m in Sources */,
+				672796081C5BE64600D54AB4 /* TableViewController.swift in Sources */,
 				672795D51C5BE56000D54AB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +415,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.SwipeTableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwipeTableViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.SwipeTableViewCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeTableViewCell/SwipeTableViewCell-Bridging-Header.h";
 			};
 			name = Release;
 		};
